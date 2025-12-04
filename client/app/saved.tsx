@@ -84,7 +84,6 @@ export default function SavedScreen() {
                     {item.lectureTitle || `Lecture ${index + 1}`}
                   </Text>
 
-                  {/* DELETE BUTTON */}
                   <TouchableOpacity
                     onPress={() => handleDeleteResult(index)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}

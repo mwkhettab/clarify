@@ -13,28 +13,22 @@ export default function ResultsDisplay({ data }: ResultsDisplayProps) {
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{ paddingBottom: 40 }}
     >
-      {/* Lecture Title */}
       <Text className="text-white text-2xl font-bold text-center mb-6">
         {data.lectureTitle}
       </Text>
 
-      {/* Audio Player */}
       <View className="mb-6">
         <AudioPlayer audioUri={data.recordingUri} />
       </View>
 
-      {/* Summary */}
       <View className="mb-6">
         <Text className="text-gray-300 text-base text-center">
           {data.summary}
         </Text>
       </View>
 
-      {/* Questions */}
       <View className="mb-6">
-        <Text className="text-white text-xl font-semibold mb-3">
-          Questions
-        </Text>
+        <Text className="text-white text-xl font-semibold mb-3">Questions</Text>
         {data.questions.map((q, index: number) => (
           <View key={index} className="mb-4 border-b border-gray-700 pb-2">
             <Text className="text-gray-100 font-semibold">
@@ -47,7 +41,6 @@ export default function ResultsDisplay({ data }: ResultsDisplayProps) {
         ))}
       </View>
 
-      {/* Study Activities */}
       <View className="mb-6">
         <Text className="text-white text-xl font-semibold mb-3">
           Study Activities
@@ -59,7 +52,6 @@ export default function ResultsDisplay({ data }: ResultsDisplayProps) {
         ))}
       </View>
 
-      {/* Study Plan */}
       <View className="mb-6">
         <Text className="text-white text-xl font-semibold mb-3">
           Study Plan
@@ -71,7 +63,6 @@ export default function ResultsDisplay({ data }: ResultsDisplayProps) {
         ))}
       </View>
 
-      {/* Transcript */}
       {data.transcript && (
         <View className="mb-6">
           <Text className="text-white text-xl font-semibold mb-3">

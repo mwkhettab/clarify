@@ -124,7 +124,6 @@ export default function ResultsScreen() {
 
   return (
     <SafeAreaView className="h-screen bg-neutral-950 px-6">
-      {/* Header */}
       <View className="h-16 flex-row justify-between items-center">
         <BackToHomeButton />
         <View className="flex-row items-center">
@@ -135,7 +134,6 @@ export default function ResultsScreen() {
         </View>
       </View>
 
-      {/* Auto-save indicator */}
       {autoSave && hasAutoSaved && (
         <View className="mt-10 bg-green-900/30 border border-green-700 rounded-lg p-3 mb-4">
           <Text className="text-green-400 text-center text-sm">
@@ -144,10 +142,8 @@ export default function ResultsScreen() {
         </View>
       )}
 
-      {/* Results Display */}
       {resultsData && <ResultsDisplay data={resultsData} />}
 
-      {/* Modal */}
       <Modal
         visible={modalVisible}
         transparent

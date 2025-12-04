@@ -94,7 +94,6 @@ export default function SettingsScreen() {
             </Text>
           </View>
 
-          {/* Auto Save Setting */}
           <View className="flex-row justify-between items-center">
             <View className="flex-1">
               <Text className="text-lg text-white">Auto Save</Text>
